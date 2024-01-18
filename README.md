@@ -1,6 +1,7 @@
 
 # Teacher-Ensemble distillation based learned Label Interpolation
 
+![alt-text](TELI meta learned lambda.png)
 I propose a Semi Supervised classification approach using two Teacher models and a student model. The goal is to leverage both labeled and unlabeled data for improved classification performance. The methodology involves training two Teacher models on the labeled data and distilling their knowledge to a student model through knowledge distillation. 
 
 The student model learns from the soft labels and logits of the Teacher models, enabling transfer of knowledge and improving generalization. To further enhance the learning process, a Meta lambda learning strategy is employed. A lambda head is introduced in the model, which takes the Teacher's logits as input and predicts a lambda value for label mixup. The lambda value determines the balance between the two Teacher models during training. 
